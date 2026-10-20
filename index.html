@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Giovanni Ferrando – Violinista a Milano | Matrimoni ed eventi</title>
-<meta name="description" content="Giovanni Ferrando, violinista a Milano e dintorni. Musica dal vivo per matrimoni, aperitivi, cene ed eventi privati: classica, film e pop. Richiedi un preventivo.">
-<meta name="theme-color" content="#141109">
+<title>Giovanni Ferrando – Violinista a Milano | Matrimoni, eventi aziendali e aperitivi</title>
+<meta name="description" content="Giovanni Ferrando, violinista a Milano e dintorni. Musica dal vivo per matrimoni, eventi aziendali e aperitivi, in diverse formazioni: dal violino solo al quartetto. Richiedi un preventivo.">
+<meta name="theme-color" content="#0b0a08">
 <meta property="og:title" content="Giovanni Ferrando – Violinista a Milano">
-<meta property="og:description" content="Musica dal vivo per matrimoni ed eventi a Milano e dintorni.">
+<meta property="og:description" content="Musica dal vivo per matrimoni, eventi aziendali e aperitivi a Milano e dintorni.">
 <meta property="og:type" content="website">
 <!-- DA FARE quando il sito è online: aggiungi <meta property="og:image" content="https://TUODOMINIO/foto/hero-2.jpg"> e <link rel="canonical" href="https://TUODOMINIO/"> (servono indirizzi completi) -->
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://i.ytimg.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Gilda+Display&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -27,7 +27,7 @@
   "@type": "Person",
   "name": "Giovanni Ferrando",
   "jobTitle": "Violinista",
-  "description": "Violinista per matrimoni ed eventi a Milano e dintorni.",
+  "description": "Violinista per matrimoni, eventi aziendali e aperitivi a Milano e dintorni.",
   "workLocation": { "@type": "Place", "name": "Milano e dintorni" },
   "email": "giovanniferrando.violinista@gmail.com",
   "sameAs": [
@@ -39,304 +39,341 @@
 
 <style>
 /* ============================================================
-   STILE: essenziale, acromatico, un solo font (Inter).
-   Per cambiare colori e font basta modificare il blocco :root.
-   Le animazioni sono tutte nella sezione "ANIMAZIONI" più sotto
-   e si spengono da sole se il telefono/computer ha "riduci animazioni".
+   STILE: nero profondo, oro tenue, titoli in serif elegante
+   (ispirato a hauserofficial.com).
+   Font: Gilda Display (titoli), Cormorant Garamond corsivo (dettagli),
+         Inter (testi). Per cambiare colori e font: blocco :root.
+   Le animazioni sono nella sezione "ANIMAZIONI ALLO SCROLL" e si
+   spengono se il dispositivo ha "riduci animazioni".
    ============================================================ */
 :root{
-  --paper:#fafafa; --ink:#000; --charcoal:#1c1c1c; --soil:#141109;
-  --ash:#dcdcdc; --driftwood:#c2b5ae;
-  --font:'Inter','Helvetica Neue',Arial,system-ui,sans-serif;
-  --gut:clamp(20px,3vw,40px);
+  --paper:#f3f1ec; --dark:#12100c; --deep:#0b0a08; --ink:#14110b;
+  --gold:#d9c885; --gold-d:#7c6830;
+  --serif:'Gilda Display','Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --italic:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Inter','Helvetica Neue',Arial,system-ui,sans-serif;
+  --gut:clamp(20px,4vw,64px);
   --ease:cubic-bezier(.2,.7,.2,1);
   interpolate-size:allow-keywords;
 }
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:24px}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{
-  margin:0;background:var(--paper);color:var(--ink);
-  font-family:var(--font);font-weight:400;font-size:17px;line-height:1.7;
-  letter-spacing:-.02em;-webkit-font-smoothing:antialiased;
+  margin:0;background:var(--deep);color:var(--ink);
+  font-family:var(--sans);font-weight:400;font-size:16.5px;line-height:1.75;
+  letter-spacing:-.005em;-webkit-font-smoothing:antialiased;
 }
 body.lock{overflow:hidden}
-h1,h2,h3,p,ul{margin:0;padding:0}
+h1,h2,h3,p,ul,dl,dd{margin:0;padding:0}
 ul{list-style:none}
 a{color:inherit;text-decoration:none}
 img{max-width:100%}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-:focus-visible{outline:1px solid currentColor;outline-offset:4px}
+:focus-visible{outline:1px solid var(--accent,var(--gold));outline-offset:4px}
 
 /* ---------- Superfici ---------- */
-.light{--fg:#000;--bg:var(--paper);background:var(--paper);color:#000}
-.dark{--fg:#fafafa;--bg:var(--charcoal);background:var(--charcoal);color:#fafafa}
-.deep{--fg:#fafafa;--bg:var(--soil);background:var(--soil);color:#fafafa}
+.light{--fg:var(--ink);--bg:var(--paper);--accent:var(--gold-d);--muted:rgba(20,17,11,.72);--frame:rgba(124,104,48,.5);--hair:rgba(20,17,11,.14);background:var(--paper);color:var(--ink)}
+.dark,.deep{--fg:#f4f1e8;--accent:var(--gold);--muted:rgba(244,241,232,.74);--frame:rgba(217,200,133,.42);--hair:rgba(244,241,232,.16);color:#f4f1e8}
+.dark{--bg:var(--dark);background:var(--dark)}
+.deep{--bg:var(--deep);background:var(--deep)}
 
-.sec{padding:clamp(72px,9vw,120px) 0 clamp(96px,16vw,220px)}
-.wrap{padding:0 var(--gut);max-width:1600px;margin:0 auto}
-.statement{font-weight:400;font-size:clamp(28px,4vw,41px);line-height:1.18;letter-spacing:-.022em;max-width:22em}
-.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:29px;margin-top:clamp(56px,8vw,120px)}
-.cols3 h3{font-size:17px;font-weight:400;margin-bottom:12px}
-.cols3 p{opacity:.78}
+.sec{padding:clamp(80px,10vw,140px) 0 clamp(88px,13vw,180px)}
+.sec.tight{padding-top:0}
+.wrap{padding:0 var(--gut);max-width:1500px;margin:0 auto}
+p{color:var(--muted)}
 
-/* Etichetta di sezione: numero, nome e filo che si disegna */
-.eyebrow{display:flex;align-items:center;gap:16px;font-size:15px;font-weight:300;line-height:1;margin-bottom:clamp(28px,4vw,56px)}
-.eyebrow span{opacity:.6;font-feature-settings:"tnum" 1}
-.eyebrow .rule{flex:1;height:1px;background:currentColor;opacity:.22}
+/* Titoli di sezione: etichetta dorata + serif */
+.eyebrow{display:flex;align-items:center;gap:18px;margin-bottom:clamp(28px,4vw,52px);font:500 12px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--accent)}
+.eyebrow .num{font-feature-settings:"tnum" 1;opacity:.75}
+.eyebrow .rule{flex:1;height:1px;background:var(--accent);opacity:.35}
+.title{font-family:var(--serif);font-weight:400;font-size:clamp(36px,5vw,66px);line-height:1.06;letter-spacing:-.012em;max-width:16em;color:var(--fg)}
+.h3{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.4vw,30px);line-height:1.2;color:var(--fg)}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,64px);margin-top:clamp(48px,7vw,96px)}
+.cols3>div{padding-top:22px;border-top:1px solid var(--hair)}
+.cols3 .h3{margin-bottom:14px}
 
-/* ---------- Bottoni: pill ghost ---------- */
-.pill{
-  display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:300px;
-  font:inherit;font-size:15px;line-height:1.2;letter-spacing:-.02em;color:inherit;background:transparent;cursor:pointer;
-  transition:background .25s,color .25s,border-color .25s,opacity .3s,visibility .3s;
+/* ---------- Bottoni: rettangolari, filo dorato ---------- */
+.btn{
+  display:inline-block;padding:16px 30px;border:1px solid var(--accent,var(--gold));
+  font:500 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;
+  color:var(--accent,var(--gold));background:transparent;cursor:pointer;
+  transition:background .35s,color .35s,border-color .35s,opacity .3s,visibility .3s;
 }
-.pill:hover{background:var(--fg,#fafafa);color:var(--bg,#000);border-color:var(--fg,#fafafa)}
+.btn:hover,.btn.solid{background:var(--accent,var(--gold));color:var(--bg,#0b0a08)}
+.btn.solid:hover{background:transparent;color:var(--accent,var(--gold))}
 
-/* ---------- Header: cambia colore in base alla sezione sotto ---------- */
+/* ---------- Header ---------- */
 .hdr{
-  --fg:#fafafa;--bg:#141109;
   position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;justify-content:flex-end;align-items:center;gap:16px;
-  padding:16px var(--gut);color:var(--fg);pointer-events:none;transition:color .3s;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding:20px var(--gut);color:#f4f1e8;border-bottom:1px solid transparent;
+  transition:background .45s,padding .45s,border-color .45s,backdrop-filter .45s;
 }
-.hdr.on-light{--fg:#000;--bg:#fafafa}
-.hdr>*{pointer-events:auto}
-.hdr:not(.over-hero) .pill{background:var(--bg)}
-.hdr:not(.over-hero) .pill:hover{background:var(--fg)}
-.hdr:not(.over-hero) .burger{background:var(--bg);border-radius:50%}
-.progress{position:absolute;left:0;right:0;top:0;height:2px;background:currentColor;opacity:.85;transform-origin:left;transform:scaleX(0);pointer-events:none}
-.burger{width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative;color:inherit;transition:background .3s}
-.burger span{position:absolute;left:10px;right:10px;height:1px;background:currentColor;transition:transform .3s,top .3s}
-.burger span:nth-child(1){top:19px}
+.hdr.solid{background:rgba(11,10,8,.88);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);padding-top:13px;padding-bottom:13px;border-bottom-color:rgba(217,200,133,.3)}
+.mark{font-family:var(--serif);font-size:15px;letter-spacing:.28em;text-transform:uppercase;white-space:nowrap;transition:opacity .5s,transform .6s var(--ease)}
+.hdr.over-hero .mark{opacity:0;transform:translateY(-6px);pointer-events:none}
+.hdr-right{display:flex;align-items:center;gap:clamp(18px,2.4vw,36px);margin-left:auto}
+.topnav{display:none;gap:clamp(20px,2.6vw,38px)}
+.topnav a{position:relative;font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:8px 0}
+.topnav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.topnav a:hover::after{transform:scaleX(1)}
+.hdr .btn{padding:12px 20px;color:var(--gold);border-color:var(--gold);--bg:#0b0a08;--accent:var(--gold)}
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--gold);transform-origin:left;transform:scaleX(0);pointer-events:none}
+.burger{width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative;color:inherit}
+.burger span{position:absolute;left:9px;right:9px;height:1px;background:currentColor;transition:transform .35s,top .35s}
+.burger span:nth-child(1){top:18px}
 .burger span:nth-child(2){top:25px}
 .burger[aria-expanded="true"] span:nth-child(1){top:22px;transform:rotate(45deg)}
 .burger[aria-expanded="true"] span:nth-child(2){top:22px;transform:rotate(-45deg)}
-body.lock .hdr{--fg:#fafafa;--bg:#141109}
+@media(min-width:1100px){.topnav{display:flex}.burger{display:none}}
 
 /* ---------- Menu a tutto schermo ---------- */
 .menu{
-  position:fixed;inset:0;z-index:90;background:var(--soil);color:#fafafa;
-  padding:96px var(--gut) 40px;display:flex;flex-direction:column;justify-content:space-between;
-  opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;overflow-y:auto;
+  position:fixed;inset:0;z-index:90;background:var(--deep);color:#f4f1e8;
+  padding:104px var(--gut) 40px;display:flex;flex-direction:column;justify-content:space-between;
+  opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s;overflow-y:auto;
 }
 .menu.open{opacity:1;visibility:visible}
-.menu li{margin-bottom:6px}
-.menu li a{display:inline-block;font-size:clamp(28px,5vw,41px);line-height:1.18;letter-spacing:-.022em;transition:color .2s,transform .4s var(--ease)}
-.menu li a:hover{color:var(--driftwood);transform:translateX(10px)}
-.menu-foot{font-size:15px;font-weight:300;display:flex;flex-wrap:wrap;gap:8px 29px;margin-top:32px}
+.menu li{margin-bottom:4px}
+.menu li a{display:inline-block;font-family:var(--serif);font-size:clamp(32px,6vw,52px);line-height:1.2;transition:color .25s,transform .5s var(--ease)}
+.menu li a:hover{color:var(--gold);transform:translateX(12px)}
+.menu-foot{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin-top:32px;font:400 14px var(--sans);color:var(--muted)}
+.menu-foot .ico{width:22px;height:22px}
 
-/* ---------- HERO con foto che ruotano ---------- */
+/* ---------- HERO ---------- */
 .hero{
-  position:relative;isolation:isolate;overflow:hidden;
-  min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
-  padding:24px var(--gut) 40px;background:var(--soil);
+  position:relative;isolation:isolate;overflow:hidden;text-align:center;
+  min-height:100vh;min-height:100svh;display:flex;flex-direction:column;background:var(--deep);
 }
-.hero-inner{display:flex;flex-direction:column;flex:1;will-change:opacity}
-.slides{position:absolute;inset:-12% 0;z-index:-2;background:var(--soil);will-change:transform}
-.slide{position:absolute;inset:0;display:block;opacity:0;transition:opacity 1.6s ease}
+.slides{position:absolute;inset:-12% 0;z-index:-2;background:var(--deep);will-change:transform}
+.slide{position:absolute;inset:0;display:block;opacity:0;transition:opacity 1.8s ease}
 .slide.on{opacity:1;z-index:1}
-.slide img{
-  width:100%;height:100%;object-fit:cover;display:block;max-width:none;
-  transform:scale(1);transition:transform 9s linear;will-change:transform;
-}
+.slide img{width:100%;height:100%;object-fit:cover;display:block;max-width:none;transform:scale(1);transition:transform 9s linear;will-change:transform}
 .slide.go img{transform:scale(1.07)}
 .slide.prev img{transform:scale(1.07);transition:none}
 .hero::before{
   content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
   background:
-    linear-gradient(115deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.12) 48%,rgba(0,0,0,0) 78%),
-    linear-gradient(0deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 46%);
+    radial-gradient(ellipse 80% 70% at 50% 42%,rgba(8,7,5,.28) 0%,rgba(8,7,5,.66) 100%),
+    linear-gradient(0deg,rgba(8,7,5,.92) 0%,rgba(8,7,5,.35) 38%,rgba(8,7,5,0) 62%);
 }
-.hero-title{font-weight:400;font-size:clamp(34px,5.4vw,76px);line-height:1.05;letter-spacing:-.03em;padding-top:4px;max-width:12em}
+.hero-inner{flex:1;display:flex;flex-direction:column;justify-content:flex-start;padding:112px var(--gut) 44px;will-change:opacity}
+.kicker{font:500 12px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+.hero-name{font-family:var(--serif);font-weight:400;font-size:clamp(46px,8.6vw,134px);line-height:1;letter-spacing:-.015em;margin:clamp(14px,2vw,26px) 0 0;color:#f6f3ea;text-shadow:0 2px 40px rgba(0,0,0,.35)}
+.hero-role{font-family:var(--italic);font-style:italic;font-weight:400;font-size:clamp(28px,4vw,58px);line-height:1;color:var(--gold);margin-top:.18em;letter-spacing:.01em}
 
-/* Pentagramma: righe che si disegnano, "Violinista" sopra, note, doppia stanghetta finale */
-.staff{--sh:clamp(100px,15vw,176px);--end:5vw;position:relative;height:var(--sh);margin:auto calc(var(--gut)*-1) 36px;display:flex;align-items:center}
-.staff-lines{position:absolute;top:0;bottom:0;left:0;right:var(--end)}
-.staff-lines i{
-  position:absolute;left:0;right:0;height:1px;background:rgba(250,250,250,.42);
-  transform-origin:left;transform:scaleX(0);animation:draw 1.8s var(--ease) forwards;
-}
-.staff-lines i:nth-child(1){top:0;animation-delay:.1s}
-.staff-lines i:nth-child(2){top:25%;animation-delay:.25s}
-.staff-lines i:nth-child(3){top:50%;animation-delay:.4s}
-.staff-lines i:nth-child(4){top:75%;animation-delay:.55s}
-.staff-lines i:nth-child(5){bottom:0;animation-delay:.7s}
-.bar{position:absolute;top:0;bottom:0;background:rgba(250,250,250,.6);opacity:0;animation:fade 1s 1.7s forwards}
-.bar.thin{right:7px;width:1px}
-.bar.thick{right:0;width:4px}
-.role{
-  position:relative;z-index:1;padding-left:var(--gut);
-  font-weight:300;font-size:calc(var(--sh)*.62);line-height:1;letter-spacing:-.035em;
-}
-.notes{display:none;position:absolute;height:137.5%;width:auto;top:-18.75%;right:calc(var(--end) + 56px);color:#fafafa;opacity:0;animation:fade 1.6s 1.4s forwards}
-@media(min-width:1100px){.notes{display:block}}
-.hero-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px}
-.hero-foot p{max-width:22em;font-weight:300;font-size:17px}
-.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
-
-/* Indicatore "Scorri" */
-.cue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:none;flex-direction:column;align-items:center;gap:10px;font-size:13px;font-weight:300;letter-spacing:.04em;color:#fafafa;opacity:0;animation:fade 1s 2.4s forwards}
-.cue i{display:block;width:1px;height:44px;background:rgba(250,250,250,.3);position:relative;overflow:hidden}
-.cue i::after{content:"";position:absolute;left:0;top:0;width:1px;height:50%;background:#fafafa;animation:cue 2.2s var(--ease) infinite}
-@media(min-width:900px){.cue{display:flex}}
-@keyframes cue{0%{transform:translateY(-100%)}70%,100%{transform:translateY(200%)}}
-@keyframes draw{to{transform:scaleX(1)}}
+/* Pentagramma: chiave, tonalità, melodia e onde sottili dietro (le "corde") */
+.staffwrap{margin:auto calc(var(--gut)*-1) clamp(14px,3vh,30px);padding-top:28px;overflow:hidden}
+.staff-svg{display:block;width:max(100%,1000px);height:auto;overflow:visible}
+.staff-svg .ln{fill:none;stroke:rgba(217,200,133,.5);stroke-width:1;stroke-dasharray:1;stroke-dashoffset:1;animation:lineDraw 1.9s var(--ease) forwards;animation-delay:var(--d,0s)}
+.staff-svg .ln.bar{stroke:rgba(217,200,133,.8)}
+.staff-svg .ln.thick{stroke-width:4}
+.staff-svg .fl,.staff-svg .hd,.staff-svg .bm{fill:#d9c885}
+.staff-svg .hd.o{fill:none;stroke:#d9c885;stroke-width:1.7}
+.staff-svg .sm{stroke:#d9c885;stroke-width:1.5;fill:none}
+.staff-svg .sl{fill:none;stroke:rgba(217,200,133,.85);stroke-width:1.3;stroke-dasharray:100;stroke-dashoffset:100;animation:lineDraw100 1.6s var(--ease) forwards;animation-delay:calc(2.1s + var(--i)*.1s)}
+.staff-svg .n{opacity:0;animation:noteIn 1.1s var(--ease) forwards;animation-delay:calc(1.1s + var(--i)*.12s)}
+.staff-svg .intro-c{opacity:0;animation:fade 1.5s var(--ease) forwards;animation-delay:calc(.6s + var(--k,0)*.3s)}
+.staff-svg .tempo{font-family:var(--italic);font-style:italic;font-size:22px;fill:rgba(217,200,133,.9)}
+.staff-svg .wv{fill:none;stroke:#d9c885;stroke-width:1;animation:drift linear infinite}
+.staff-svg .w1{opacity:.36}.staff-svg .w2{opacity:.22}.staff-svg .w3{opacity:.3}
+@keyframes lineDraw{to{stroke-dashoffset:0}}
+@keyframes lineDraw100{to{stroke-dashoffset:0}}
+@keyframes noteIn{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+@keyframes drift{to{transform:translateX(-1600px)}}
 @keyframes fade{to{opacity:1}}
 
-/* ---------- Chi sono ---------- */
-.about{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,96px);align-items:start}
-.about p{max-width:34em;margin-top:32px;font-weight:300}
+.hero-foot p{max-width:34em;margin:0 auto;color:rgba(244,241,232,.82);font-size:17px}
+.hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:26px}
 
-/* Cornice immagine (usata anche per l'effetto parallasse) */
-.ph{position:relative;overflow:hidden;background:#e7e7e7}
+
+/* ---------- Cornice elegante (foto e video) ---------- */
+.frame{position:relative;padding:clamp(9px,1vw,14px);border:1px solid var(--frame)}
+.frame::after{
+  content:"";position:absolute;inset:-6px;pointer-events:none;--c:var(--accent);
+  background:
+    linear-gradient(var(--c),var(--c)) 0 0/16px 1px no-repeat,    linear-gradient(var(--c),var(--c)) 0 0/1px 16px no-repeat,
+    linear-gradient(var(--c),var(--c)) 100% 0/16px 1px no-repeat,  linear-gradient(var(--c),var(--c)) 100% 0/1px 16px no-repeat,
+    linear-gradient(var(--c),var(--c)) 0 100%/16px 1px no-repeat,  linear-gradient(var(--c),var(--c)) 0 100%/1px 16px no-repeat,
+    linear-gradient(var(--c),var(--c)) 100% 100%/16px 1px no-repeat,linear-gradient(var(--c),var(--c)) 100% 100%/1px 16px no-repeat;
+}
+.ph{position:relative;overflow:hidden;background:#e4e0d6}
+.dark .ph,.deep .ph{background:#0b0a08}
 .ph img{display:block;width:100%;height:100%;object-fit:cover;max-width:none}
 .ph[data-par] img{height:116%;margin-top:-8%;will-change:transform}
-.about .ph{width:100%;max-width:520px;aspect-ratio:3/4;justify-self:end}
+
+/* ---------- Chi sono ---------- */
+.about{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(40px,7vw,120px);align-items:start}
+.about .lead{max-width:34em;margin-top:30px;font-size:18px}
+.facts{margin-top:clamp(34px,4vw,52px);max-width:40em}
+.facts>div{display:grid;grid-template-columns:128px 1fr;gap:6px 24px;padding:18px 0;border-top:1px solid var(--hair)}
+.facts>div:last-child{border-bottom:1px solid var(--hair)}
+.facts dt{font:500 11.5px/1.9 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+.facts dd{color:var(--fg);line-height:1.6}
+.facts dd .sub{display:block;color:var(--muted)}
+.facts dd li{padding:1px 0}
+.about .frame{width:100%;max-width:500px;justify-self:end}
+.about .ph{aspect-ratio:3/4}
+
+/* ---------- Servizi: occasioni + formazioni ---------- */
+.cols3 p{max-width:26em}
+.forms{margin-top:clamp(56px,8vw,112px)}
+.forms>.label{font:500 12px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:26px}
+.fgroup{display:grid;grid-template-columns:minmax(150px,1fr) 2.2fr;gap:12px 40px;padding:26px 0;border-top:1px solid var(--hair)}
+.fgroup:last-child{border-bottom:1px solid var(--hair)}
+.fgroup h3{font:500 11.5px/1.9 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.fgroup li{font-family:var(--serif);font-size:clamp(21px,2.1vw,27px);line-height:1.3;color:var(--fg);padding:5px 0}
+.fgroup li small{font:400 14px var(--sans);color:var(--muted);margin-left:10px;letter-spacing:0}
 
 /* ---------- Video ---------- */
-.vfeature{display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:clamp(28px,6vw,96px);margin-top:clamp(48px,7vw,96px);align-items:start}
-.vf-text .label{display:block;font-size:15px;font-weight:300;opacity:.6;margin-bottom:12px}
-.vf-text h3{font-size:clamp(26px,3.4vw,41px);font-weight:400;line-height:1.18;letter-spacing:-.022em}
-.vf-text p{margin-top:20px;max-width:32em;font-weight:300}
-.vf-text .pill{margin-top:32px}
-.vstrip{--vsh:clamp(300px,34vw,440px);display:flex;gap:20px;overflow-x:auto;margin-top:clamp(56px,8vw,120px);padding-bottom:14px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.vfeature{display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:clamp(36px,7vw,112px);margin-top:clamp(52px,7vw,96px);align-items:center}
+.vf-text .label{display:block;font:500 12px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+.vf-text p{margin-top:20px;max-width:32em}
+.vf-text .btn{margin-top:32px}
+.vstrip{--vsh:clamp(300px,32vw,420px);display:flex;gap:clamp(28px,3.4vw,52px);overflow-x:auto;margin-top:clamp(64px,8vw,120px);padding:10px 10px 18px;margin-left:-10px;margin-right:-10px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
 .vstrip figure{flex:none;scroll-snap-align:start}
-.vstrip .w916{width:calc(var(--vsh)*9/16)}
-.vstrip .w169{width:calc(var(--vsh)*16/9)}
-.vstrip .vid-box{height:var(--vsh);width:100%}
+.vstrip .vid-box{height:var(--vsh)}
+.vstrip .w916 .vid-box{aspect-ratio:9/16}
+.vstrip .w169 .vid-box{aspect-ratio:16/9}
 .vid-box{position:relative;overflow:hidden;background:#000}
 .v916{aspect-ratio:9/16}
 .vfeature .vid-box{width:100%}
 .vid-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vid-btn{display:block;width:100%;height:100%;position:relative;background:var(--soil);color:#fafafa}
+.vid-btn{display:block;width:100%;height:100%;position:relative;background:var(--deep);color:#fafafa}
 .vid-btn img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .4s,transform 1.2s var(--ease)}
-.vid-btn:hover img{opacity:.8;transform:scale(1.04)}
-.play{position:absolute;left:50%;top:50%;width:60px;height:60px;margin:-30px 0 0 -30px;border:1px solid #fafafa;border-radius:50%;transition:transform .5s var(--ease),background .3s}
-.play::after{content:"";position:absolute;left:24px;top:19px;border-left:15px solid #fafafa;border-top:10px solid transparent;border-bottom:10px solid transparent}
-.vid-btn:hover .play{transform:scale(1.12);background:rgba(250,250,250,.12)}
+.vid-btn:hover img{opacity:.82;transform:scale(1.04)}
+.play{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px 0 0 -31px;border:1px solid var(--gold);border-radius:50%;transition:transform .5s var(--ease),background .3s}
+.play::after{content:"";position:absolute;left:25px;top:19px;border-left:15px solid var(--gold);border-top:11px solid transparent;border-bottom:11px solid transparent}
+.vid-btn:hover .play{transform:scale(1.12);background:rgba(217,200,133,.14)}
 figure{margin:0}
-figcaption{margin-top:14px;font-size:15px;line-height:1.4;letter-spacing:-.02em}
-figcaption strong{display:block;font-weight:400}
-figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
+figcaption{width:0;min-width:100%;margin-top:22px;font-size:14.5px;line-height:1.45}
+figcaption strong{display:block;font-family:var(--serif);font-weight:400;font-size:19px;color:var(--fg);margin-bottom:3px}
+figcaption span{display:block;color:var(--muted)}
 
 /* ---------- Foto ---------- */
-.sec.photos{padding-bottom:clamp(48px,8vw,120px)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:clamp(300px,42vw,700px);grid-auto-flow:dense;gap:6px;margin-top:clamp(40px,6vw,80px)}
-.grid .ph{background:#0d0b07}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:clamp(300px,40vw,640px);grid-auto-flow:dense;gap:clamp(26px,3.4vw,52px);margin-top:clamp(48px,6vw,88px)}
+.grid .frame{display:flex;min-width:0}
+.grid .ph{flex:1;min-width:0}
 .grid .wide{grid-column:span 2}
 
-/* ---------- Repertorio ---------- */
-.rep3{display:grid;grid-template-columns:repeat(3,1fr);gap:29px;margin-top:clamp(56px,8vw,120px)}
-.rep3 h3{font-size:15px;font-weight:300;opacity:.6;margin-bottom:18px;letter-spacing:-.01em}
-.rep3 li{padding:14px 0;border-top:1px solid var(--ash);line-height:1.4}
-.rep3 li small{display:block;font-size:15px;font-weight:300;opacity:.6}
-.rep-note{margin-top:48px;font-weight:300}
-
 /* ---------- Come funziona ---------- */
-.step-n{display:block;font-weight:300;font-size:15px;opacity:.6;margin-bottom:10px;font-feature-settings:"tnum" 1}
+.step-n{display:block;font-family:var(--serif);font-size:clamp(40px,4.4vw,58px);line-height:1;color:var(--accent);margin-bottom:20px}
 
 /* ---------- FAQ ---------- */
-.faq{margin-top:clamp(48px,7vw,96px);max-width:900px}
-.faq details{border-top:1px solid var(--ash)}
-.faq details:last-child{border-bottom:1px solid var(--ash)}
-.faq summary{list-style:none;cursor:pointer;padding:22px 0;font-size:21px;line-height:1.3;display:flex;justify-content:space-between;gap:24px;transition:opacity .25s}
-.faq summary:hover{opacity:.6}
+.sec.faqsec{padding-top:0}
+.faq{margin-top:clamp(44px,6vw,80px);max-width:920px}
+.faq details{border-top:1px solid var(--hair)}
+.faq details:last-child{border-bottom:1px solid var(--hair)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 0;font-family:var(--serif);font-size:clamp(20px,2.1vw,25px);line-height:1.3;display:flex;justify-content:space-between;gap:24px;color:var(--fg);transition:color .3s}
+.faq summary:hover{color:var(--accent)}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-weight:300;transition:transform .4s var(--ease)}
+.faq summary::after{content:"+";font-family:var(--sans);font-weight:300;font-size:26px;line-height:1;color:var(--accent);transition:transform .45s var(--ease)}
 .faq details[open] summary::after{transform:rotate(45deg)}
-.faq p{margin:0 0 24px;max-width:46em;font-weight:300}
-.faq details::details-content{block-size:0;overflow:hidden;transition:block-size .45s var(--ease),content-visibility .45s allow-discrete}
+.faq p{margin:0 0 26px;max-width:46em}
+.faq details::details-content{block-size:0;overflow:hidden;transition:block-size .5s var(--ease),content-visibility .5s allow-discrete}
 .faq details[open]::details-content{block-size:auto}
 
 /* ---------- Contatti ---------- */
-.mail{position:relative;display:inline-block;margin-top:clamp(40px,6vw,80px);font-size:clamp(20px,3.6vw,44px);letter-spacing:-.025em;line-height:1.2;word-break:break-word;padding-bottom:4px}
-.mail::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform-origin:left;transition:transform .6s var(--ease)}
+.mail{position:relative;display:inline-block;margin-top:clamp(36px,5vw,64px);font-family:var(--serif);font-size:clamp(16px,4.4vw,58px);letter-spacing:-.01em;line-height:1.2;max-width:100%;overflow-wrap:anywhere;padding-bottom:6px;color:var(--fg)}
+.mail::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform-origin:left;transition:transform .7s var(--ease)}
 .mail:hover::after{transform:scaleX(0);transform-origin:right}
-.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
-.copyright{margin-top:clamp(80px,12vw,160px);font-size:15px;font-weight:300;opacity:.6}
+@media(max-width:480px){.mail{font-size:clamp(15px,5.1vw,24px)}}
+.socials{display:flex;flex-wrap:wrap;gap:22px clamp(28px,4vw,56px);margin-top:clamp(44px,6vw,72px)}
+.social{display:flex;align-items:center;gap:18px;color:var(--fg)}
+.social .ico-wrap{display:grid;place-items:center;width:62px;height:62px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);transition:background .4s,color .4s,transform .6s var(--ease)}
+.social:hover .ico-wrap{background:var(--gold);color:var(--deep);transform:translateY(-3px)}
+.ico{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.social b{display:block;font:500 11.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.social span{display:block;font-family:var(--serif);font-size:19px;line-height:1.2}
+.contact-cta{margin-top:clamp(40px,5vw,60px)}
+.copyright{margin-top:clamp(80px,12vw,150px);padding-top:26px;border-top:1px solid var(--hair);font-size:13.5px;letter-spacing:.04em;color:var(--muted)}
 /* DA FARE con il commercialista: aggiungi qui i dati obbligatori (es. P.IVA) se richiesti */
 
 /* ============================================================
    ANIMAZIONI ALLO SCROLL
-   Nascoste solo se JavaScript è attivo (classe "js"), così senza JS
+   Nascoste solo se JavaScript è attivo (classe "js"): senza JS
    il sito resta comunque completo e leggibile.
    ============================================================ */
-.js [data-r]{opacity:0;transform:translate3d(0,28px,0);transition:opacity 1s var(--ease),transform 1.1s var(--ease),background .25s,color .25s,border-color .25s;transition-delay:var(--d,0ms),var(--d,0ms),0ms,0ms,0ms}
+.js [data-r]{opacity:0;transform:translate3d(0,28px,0);transition:opacity 1s var(--ease),transform 1.1s var(--ease),background .35s,color .35s,border-color .35s;transition-delay:var(--d,0ms),var(--d,0ms),0ms,0ms,0ms}
 .js [data-r].in{opacity:1;transform:none}
-
-/* Filo di sezione: si disegna da sinistra */
-.js .rule[data-r]{opacity:.22;transform:scaleX(0);transform-origin:left;transition:transform 1.6s var(--ease)}
+.js .rule[data-r]{opacity:.35;transform:scaleX(0);transform-origin:left;transition:transform 1.6s var(--ease)}
 .js .rule[data-r].in{transform:scaleX(1)}
-
-/* Titoli: parola per parola, da una maschera */
-.js .split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
-.js .split .w>span{display:inline-block;transform:translate3d(0,112%,0);transition:transform 1.1s var(--ease);transition-delay:calc(var(--i)*55ms + var(--base,0ms))}
+.js .split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.16em;margin-bottom:-.16em}
+.js .split .w>span{display:inline-block;transform:translate3d(0,112%,0);transition:transform 1.2s var(--ease);transition-delay:calc(var(--i)*70ms + var(--base,0ms))}
 .js .split.in .w>span{transform:none}
-
-/* Immagini: si aprono da una maschera, con zoom morbido */
-.js .ph[data-r]{opacity:1;transform:none;clip-path:inset(14% 0 0 0);transition:clip-path 1.5s var(--ease);transition-delay:var(--d,0ms)}
+.js .ph[data-r]{opacity:1;transform:none;clip-path:inset(14% 0 0 0);transition:clip-path 1.6s var(--ease);transition-delay:var(--d,0ms)}
 .js .ph[data-r].in{clip-path:inset(0 0 0 0)}
-.js .ph[data-r] img{scale:1.14;transition:scale 2s var(--ease);transition-delay:var(--d,0ms)}
+.js .ph[data-r] img{scale:1.14;transition:scale 2.1s var(--ease);transition-delay:var(--d,0ms)}
 .js .ph[data-r].in img{scale:1}
-
-/* Entrata dell'hero */
-.js .intro-r{opacity:0;transform:translate3d(0,18px,0);animation:rise 1.2s var(--ease) forwards;animation-delay:var(--d,0ms)}
+.js .intro-r{opacity:0;transform:translate3d(0,18px,0);animation:rise 1.3s var(--ease) forwards;animation-delay:var(--d,0ms)}
 @keyframes rise{to{opacity:1;transform:none}}
-
-/* Menu: le voci entrano una dopo l'altra */
 .js .menu li{opacity:0;transform:translate3d(0,16px,0);transition:opacity .5s,transform .7s var(--ease)}
 .js .menu.open li{opacity:1;transform:none;transition-delay:calc(.12s + var(--i)*45ms)}
 
 /* ---------- Responsive ---------- */
-@media(max-width:1000px){.rep3{grid-template-columns:1fr 1fr}}
-@media(max-width:860px){
-  .cols3{grid-template-columns:1fr;gap:40px}
+@media(max-width:900px){
+  .cols3{grid-template-columns:1fr;gap:34px}
   .about,.vfeature{grid-template-columns:1fr}
-  .about .ph{justify-self:start;max-width:420px}
-  .vfeature .vid-box{max-width:340px}
+  .about .frame{justify-self:start;max-width:420px}
+  .vfeature .frame{max-width:360px}
+  .fgroup{grid-template-columns:1fr}
+  .facts>div{grid-template-columns:1fr}
 }
 @media(max-width:700px){
-  .grid{grid-template-columns:1fr 1fr;grid-auto-rows:clamp(220px,58vw,380px)}
-  .hdr.over-hero .pill{opacity:0;visibility:hidden}
+  .grid{grid-template-columns:1fr;grid-auto-rows:clamp(340px,92vw,520px)}
+  .grid .wide{grid-column:auto}
+  .hdr .btn{display:none}
+  .staff-svg{width:max(100%,780px)}
 }
-@media(max-width:560px){.rep3{grid-template-columns:1fr}.staff{margin-bottom:28px}}
+@media(max-height:700px){.hero-inner{padding-top:96px}}
 
 /* Chi preferisce meno movimento: tutto fermo, contenuto subito visibile */
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .staff-lines i{animation:none;transform:none}
-  .bar,.notes,.cue{animation:none;opacity:1}
   .slide,.slide img{transition:none}
+  .cue{animation:none;opacity:1}
+  .staff-svg .ln,.staff-svg .sl{animation:none;stroke-dashoffset:0}
+  .staff-svg .n,.staff-svg .intro-c{animation:none;opacity:1}
+  .staff-svg .wv{animation:none}
   .js [data-r],.js .rule[data-r],.js .split .w>span,.js .ph[data-r],.js .ph[data-r] img,.js .intro-r,.js .menu li{
     opacity:1;transform:none;clip-path:none;scale:1;animation:none;transition:none}
-  .js .rule[data-r]{opacity:.22}
+  .js .rule[data-r]{opacity:.35}
   .progress{display:none}
 }
 </style>
 </head>
 <body>
 
-<header class="hdr" id="hdr">
+<header class="hdr over-hero" id="hdr">
+  <a class="mark" href="#intro" aria-label="Giovanni Ferrando, torna all'inizio">Giovanni Ferrando</a>
+  <div class="hdr-right">
+    <nav class="topnav" aria-label="Menu principale">
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#video">Video</a>
+      <a href="#foto">Foto</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a class="btn" href="#contatti">Preventivo</a>
+    <button class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
   <i class="progress" id="progress" aria-hidden="true"></i>
-  <a class="pill" href="#contatti">Preventivo</a>
-  <button class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
 </header>
 
-<nav class="menu" id="menu" aria-label="Menu principale">
+<nav class="menu" id="menu" aria-label="Menu completo">
   <ul>
     <li style="--i:0"><a href="#chi-sono">Chi sono</a></li>
     <li style="--i:1"><a href="#servizi">Servizi</a></li>
     <li style="--i:2"><a href="#video">Video</a></li>
     <li style="--i:3"><a href="#foto">Foto</a></li>
-    <li style="--i:4"><a href="#repertorio">Repertorio</a></li>
-    <li style="--i:5"><a href="#come-funziona">Come funziona</a></li>
-    <li style="--i:6"><a href="#faq">Domande frequenti</a></li>
-    <li style="--i:7"><a href="#contatti">Contatti</a></li>
+    <li style="--i:4"><a href="#come-funziona">Come funziona</a></li>
+    <li style="--i:5"><a href="#faq">Domande frequenti</a></li>
+    <li style="--i:6"><a href="#contatti">Contatti</a></li>
   </ul>
   <div class="menu-foot">
     <a href="mailto:giovanniferrando.violinista@gmail.com">giovanniferrando.violinista@gmail.com</a>
-    <a href="https://www.instagram.com/giovanniferrando.violinista/" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.youtube.com/@giovanniferrando7244" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.instagram.com/giovanniferrando.violinista/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a>
+    <a href="https://www.youtube.com/@giovanniferrando7244" target="_blank" rel="noopener" aria-label="YouTube"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.4v5.2l4.6-2.6z"/></svg></a>
   </div>
 </nav>
 
@@ -366,57 +403,68 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
   </div>
 
   <div class="hero-inner" id="heroInner">
-    <h1 class="hero-title split" id="heroTitle" aria-label="Giovanni Ferrando – Violinista a Milano">Giovanni Ferrando</h1>
+    <p class="kicker intro-r" style="--d:150ms">Milano e dintorni</p>
+    <h1 class="hero-name split" id="heroTitle" aria-label="Giovanni Ferrando – Violinista a Milano">Giovanni Ferrando</h1>
+    <p class="hero-role intro-r" style="--d:800ms">Violinista</p>
 
-    <div class="staff">
-      <div class="staff-lines" aria-hidden="true">
-        <i></i><i></i><i></i><i></i><i></i>
-        <b class="bar thin"></b><b class="bar thick"></b>
-      </div>
-      <svg class="notes" viewBox="0 -30 520 220" aria-hidden="true" focusable="false">
-        <g fill="currentColor">
-          <ellipse cx="40"  cy="140" rx="11.5" ry="8" transform="rotate(-20 40 140)"/>
-          <ellipse cx="120" cy="100" rx="11.5" ry="8" transform="rotate(-20 120 100)"/>
-          <ellipse cx="200" cy="60"  rx="11.5" ry="8" transform="rotate(-20 200 60)"/>
-          <ellipse cx="280" cy="80"  rx="11.5" ry="8" transform="rotate(-20 280 80)"/>
-          <ellipse cx="360" cy="40"  rx="11.5" ry="8" transform="rotate(-20 360 40)"/>
-          <ellipse cx="440" cy="100" rx="11.5" ry="8" transform="rotate(-20 440 100)"/>
-        </g>
-        <g stroke="currentColor" stroke-width="1.6" fill="none">
-          <path d="M50.5 138V82"/>
-          <path d="M130.5 98V42"/>
-          <path d="M189.5 62V118"/>
-          <path d="M269.5 82V138"/>
-          <path d="M349.5 42V98"/>
-          <path d="M450.5 98V42"/>
-        </g>
-      </svg>
-      <p class="role intro-r" style="--d:900ms">Violinista</p>
+    <div class="staffwrap">
+<svg class="staff-svg" id="staffSvg" viewBox="0 0 1600 230" preserveAspectRatio="xMinYMid meet" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="edgeFade" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".12" stop-color="#fff" stop-opacity="1"/>
+      <stop offset=".88" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="edgeMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="230"><rect width="1600" height="230" fill="url(#edgeFade)"/></mask>
+  </defs>
+  <g mask="url(#edgeMask)"><path class="wv w1" style="animation-duration:40s" d="M0 126 Q100.0 58 200.0 126 T400.0 126 T600.0 126 T800.0 126 T1000.0 126 T1200.0 126 T1400.0 126 T1600.0 126 T1800.0 126 T2000.0 126 T2200.0 126 T2400.0 126 T2600.0 126 T2800.0 126 T3000.0 126 T3200.0 126 T3400.0 126 T3600.0 126 T3800.0 126"/><path class="wv w2" style="animation-duration:70s" d="M-200 126 Q0.0 6 200.0 126 T600.0 126 T1000.0 126 T1400.0 126 T1800.0 126 T2200.0 126 T2600.0 126 T3000.0 126 T3400.0 126 T3800.0 126 T4200.0 126"/><path class="wv w3" style="animation-duration:55s" d="M-60 126 Q20.0 90 100.0 126 T260.0 126 T420.0 126 T580.0 126 T740.0 126 T900.0 126 T1060.0 126 T1220.0 126 T1380.0 126 T1540.0 126 T1700.0 126 T1860.0 126 T2020.0 126 T2180.0 126 T2340.0 126 T2500.0 126 T2660.0 126 T2820.0 126 T2980.0 126 T3140.0 126 T3300.0 126 T3460.0 126 T3620.0 126"/></g>
+  <path class="ln" pathLength="1" style="--d:0.15s" d="M30 82 H1570"/><path class="ln" pathLength="1" style="--d:0.27s" d="M30 104 H1570"/><path class="ln" pathLength="1" style="--d:0.39s" d="M30 126 H1570"/><path class="ln" pathLength="1" style="--d:0.51s" d="M30 148 H1570"/><path class="ln" pathLength="1" style="--d:0.63s" d="M30 170 H1570"/>
+  <path class="ln bar" pathLength="1" style="--d:.9s" d="M30 82 V170"/>
+  <g class="intro-c"><path class="fl" transform="translate(48 148) scale(.088 -.088)" d="M314 801Q300 854 291.0 906.0Q282 958 282 1012Q282 1059 288.5 1100.5Q295 1142 307 1177Q320 1217 341.0 1252.5Q362 1288 385.5 1311.0Q409 1334 427 1334Q451 1334 493 1249Q514 1206 524.0 1156.0Q534 1106 534 1049Q534 978 515.0 907.5Q496 837 459.5 775.0Q423 713 372 666L407 498Q422 500 432.0 501.0Q442 502 447 502Q508 502 556.0 467.5Q604 433 632.5 377.0Q661 321 661 254Q661 177 621.5 115.5Q582 54 503 25Q508 8 532 -117Q538 -147 541.0 -164.5Q544 -182 545.0 -195.0Q546 -208 546 -225Q546 -275 521.5 -314.5Q497 -354 455.5 -376.0Q414 -398 363 -398Q311 -398 271.0 -378.5Q231 -359 208.0 -324.5Q185 -290 185 -245Q185 -197 211.5 -165.0Q238 -133 287 -133Q329 -133 355.5 -163.5Q382 -194 382 -236Q382 -272 357.0 -299.0Q332 -326 292 -326H282Q308 -365 364 -365Q433 -365 472.0 -320.0Q511 -275 511 -205Q511 -188 507.0 -159.5Q503 -131 493 -91Q483 -51 477.5 -25.0Q472 1 470 12Q436 2 390 2Q304 2 222 52Q142 102 96.0 184.0Q50 266 50 361Q50 451 91 530Q132 609 192.5 675.0Q253 741 314 801ZM341 826Q364 838 390.0 870.5Q416 903 440.0 945.0Q464 987 479.0 1029.5Q494 1072 494 1106Q494 1142 483.0 1163.0Q472 1184 445 1184Q421 1184 398.5 1162.0Q376 1140 358.5 1103.5Q341 1067 331.0 1022.0Q321 977 321 930Q321 898 327.5 872.0Q334 846 341 826ZM398 379Q371 373 347.0 353.5Q323 334 308.5 306.5Q294 279 294 248Q294 223 307.0 196.5Q320 170 339 154Q352 142 365 136Q380 129 380 123Q380 120 370 117Q332 126 301.5 151.0Q271 176 253.5 211.5Q236 247 236 287Q236 330 253.5 370.0Q271 410 302.5 442.0Q334 474 374 490L345 641Q229 547 174.5 456.5Q120 366 120 277Q120 212 154.0 156.0Q188 100 247.0 65.5Q306 31 380 31Q400 31 420.5 35.0Q441 39 464 45ZM495 55Q593 97 593 227Q593 270 571.0 305.5Q549 341 512.0 362.0Q475 383 429 383Z"/></g>
+  <g class="intro-c" style="--k:1"><path class="fl" transform="translate(128 82) scale(.088 -.088)" d="M97 46V189L50 177V277L97 290V486H128V298L195 314V509H226V322L275 333V234L226 220V77L275 89V-14L226 -26V-214H195V-34L128 -52V-247H97V-59L50 -71V32ZM195 70V214L128 197V54Z"/></g>
+  <text class="tempo intro-c" style="--k:2" x="300" y="46">Andante</text>
+  <g class="n" style="--i:0"><ellipse class="hd" cx="300.0" cy="148" rx="8.6" ry="6.3" transform="rotate(-22 300.0 148)"/><path class="sm" d="M308.1 147 V110"/></g><g class="n" style="--i:1"><ellipse class="hd" cx="396.3" cy="126" rx="8.6" ry="6.3" transform="rotate(-22 396.3 126)"/><path class="sm" d="M388.2 127 V160.0"/><ellipse class="hd" cx="460.5" cy="104" rx="8.6" ry="6.3" transform="rotate(-22 460.5 104)"/><path class="sm" d="M452.4 105 V149.0"/><polygon class="bm" points="387.4,154.8 453.2,143.8 453.2,149.0 387.4,160.0"/></g><g class="n" style="--i:2"><ellipse class="hd" cx="567.5" cy="71" rx="8.6" ry="6.3" transform="rotate(-22 567.5 71)"/><path class="sm" d="M559.4 72 V109"/></g><g class="n" style="--i:3"><ellipse class="hd" cx="663.8" cy="82" rx="8.6" ry="6.3" transform="rotate(-22 663.8 82)"/><path class="sm" d="M655.7 83 V127.0"/><ellipse class="hd" cx="728.0" cy="93" rx="8.6" ry="6.3" transform="rotate(-22 728.0 93)"/><path class="sm" d="M719.9 94 V132.5"/><ellipse class="hd" cx="792.2" cy="104" rx="8.6" ry="6.3" transform="rotate(-22 792.2 104)"/><path class="sm" d="M784.1 105 V138.0"/><polygon class="bm" points="654.9,121.8 784.9,132.8 784.9,138.0 654.9,127.0"/></g><path class="sl" pathLength="100" style="--i:4" d="M657.4 56 Q728.0 27.2 798.6 56"/><g class="n" style="--i:5"><ellipse class="hd o" cx="909.9" cy="126" rx="8.6" ry="6.3" transform="rotate(-22 909.9 126)"/><path class="sm" d="M901.8 127 V164"/></g><g class="n" style="--i:6"><ellipse class="hd" cx="1016.9" cy="104" rx="8.6" ry="6.3" transform="rotate(-22 1016.9 104)"/><path class="sm" d="M1008.8 105 V142"/></g><g class="n" style="--i:7"><ellipse class="hd" cx="1113.2" cy="126" rx="8.6" ry="6.3" transform="rotate(-22 1113.2 126)"/><path class="sm" d="M1121.3 125 V92.0"/><ellipse class="hd" cx="1177.4" cy="148" rx="8.6" ry="6.3" transform="rotate(-22 1177.4 148)"/><path class="sm" d="M1185.5 147 V103.0"/><polygon class="bm" points="1120.5,92.0 1186.3,103.0 1186.3,108.2 1120.5,97.2"/></g><g class="n" style="--i:8"><ellipse class="hd" cx="1273.7" cy="137" rx="8.6" ry="6.3" transform="rotate(-22 1273.7 137)"/><path class="sm" d="M1281.8 136 V99"/></g><g class="n" style="--i:9"><ellipse class="hd" cx="1359.3" cy="93" rx="8.6" ry="6.3" transform="rotate(-22 1359.3 93)"/><path class="sm" d="M1351.2 94 V138.0"/><ellipse class="hd" cx="1423.5" cy="115" rx="8.6" ry="6.3" transform="rotate(-22 1423.5 115)"/><path class="sm" d="M1415.4 116 V149.0"/><polygon class="bm" points="1350.4,132.8 1416.2,143.8 1416.2,149.0 1350.4,138.0"/></g><g class="n" style="--i:10"><ellipse class="hd o" cx="1519.8" cy="148" rx="8.6" ry="6.3" transform="rotate(-22 1519.8 148)"/></g>
+  <path class="ln bar" pathLength="1" style="--d:1.6s" d="M1556 82 V170"/>
+  <path class="ln bar thick" pathLength="1" style="--d:1.7s" d="M1568 82 V170"/>
+</svg>
     </div>
 
     <div class="hero-foot intro-r" style="--d:1500ms">
-      <p>Musica dal vivo per matrimoni ed eventi a Milano e dintorni.</p>
+      <p>Musica dal vivo per matrimoni, eventi aziendali e aperitivi.</p>
       <div class="hero-actions">
-        <a class="pill" href="#contatti">Richiedi un preventivo</a>
-        <a class="pill" href="#video">Ascolta</a>
+        <a class="btn solid" href="#contatti">Richiedi un preventivo</a>
+        <a class="btn" href="#video">Ascolta</a>
       </div>
     </div>
   </div>
 
-  <a class="cue" href="#chi-sono" aria-label="Scorri verso il basso"><span>Scorri</span><i></i></a>
 </section>
 
 <!-- ============ CHI SONO ============ -->
 <section id="chi-sono" class="sec light">
   <div class="wrap">
-    <div class="eyebrow"><span>01</span>Chi sono<i class="rule" data-r></i></div>
+    <div class="eyebrow"><span class="num">01</span>Chi sono<i class="rule" data-r></i></div>
     <div class="about">
       <div>
-        <h2 class="statement split">Violinista a Milano. Suono nei momenti che contano.</h2>
-        <!-- DA PERSONALIZZARE: nome del conservatorio, maestri, anni di esperienza, numero di matrimoni suonati -->
-        <p data-r style="--d:250ms">Mi chiamo Giovanni Ferrando. Studio violino in conservatorio, compongo e suono dal vivo ai matrimoni e negli eventi privati a Milano e dintorni. Preparo ogni scaletta insieme a chi mi sceglie, perché la musica giusta è quella che racconta voi.</p>
+        <h2 class="title split">Violinista a Milano</h2>
+        <p class="lead" data-r style="--d:250ms">Mi chiamo Giovanni Ferrando. Ho studiato alla Civica Scuola di Musica Claudio Abbado di Milano con il Maestro Francesco Borali. Suono ai matrimoni, negli eventi aziendali e negli aperitivi, in diverse formazioni.</p>
+        <dl class="facts" data-stagger>
+          <div>
+            <dt>Studi</dt>
+            <dd>Civica Scuola di Musica Claudio Abbado, Milano<span class="sub">Maestro Francesco Borali</span></dd>
+          </div>
+          <div>
+            <dt>Musica per</dt>
+            <dd><ul><li>Matrimoni, solo cerimonia e/o ricevimento</li><li>Eventi aziendali</li><li>Aperitivi</li></ul></dd>
+          </div>
+          <div>
+            <dt>Formazioni</dt>
+            <dd><ul><li>Violino solo</li><li>Violino e pianoforte e/o organo</li><li>Violino e violoncello</li><li>Trio d’archi</li><li>Quartetto d’archi</li><li>Trio con pianoforte e/o organo</li><li>Quartetto con pianoforte e/o organo</li></ul></dd>
+          </div>
+        </dl>
       </div>
-      <div class="ph" data-r data-par><img src="foto/chi-sono.jpg" alt="Giovanni Ferrando con il violino in una chiesa" width="1200" height="1600" loading="lazy" decoding="async"></div>
+      <div class="frame" data-r style="--d:150ms">
+        <div class="ph" data-r data-par><img src="foto/chi-sono.jpg" alt="Giovanni Ferrando con il violino in una chiesa" width="1200" height="1600" loading="lazy" decoding="async"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -424,20 +472,48 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
 <!-- ============ SERVIZI ============ -->
 <section id="servizi" class="sec dark">
   <div class="wrap">
-    <div class="eyebrow"><span>02</span>Servizi<i class="rule" data-r></i></div>
-    <h2 class="statement split">Un violino dal vivo, per ogni momento della giornata.</h2>
+    <div class="eyebrow"><span class="num">02</span>Servizi<i class="rule" data-r></i></div>
+    <h2 class="title split">Musica dal vivo per ogni occasione</h2>
     <div class="cols3" data-stagger>
       <div>
-        <h3>Matrimoni</h3>
-        <p>Cerimonia, ingresso degli sposi, aperitivo, cena, taglio torta e primo ballo. Una colonna sonora costruita insieme a voi, momento per momento.</p>
+        <h3 class="h3">Matrimoni</h3>
+        <p>Solo cerimonia, solo ricevimento oppure entrambi: ingresso degli sposi, scambio degli anelli, aperitivo, cena, primo ballo.</p>
       </div>
       <div>
-        <h3>Eventi privati e aziendali</h3>
-        <p>Cene, inaugurazioni, ricevimenti, compleanni e feste. Un accompagnamento elegante che vive nell'atmosfera senza coprirla.</p>
+        <h3 class="h3">Eventi aziendali</h3>
+        <p>Inaugurazioni, cene, ricevimenti, presentazioni. Un accompagnamento sobrio, che non copre la conversazione.</p>
       </div>
       <div>
-        <h3>Formazioni</h3>
-        <p>Violino solo con base professionale, oppure in duo con il violoncello. Quartetto e altre formazioni su richiesta.</p>
+        <h3 class="h3">Aperitivi</h3>
+        <p>Musica dal vivo per aperitivi e cocktail, privati o aziendali.</p>
+      </div>
+    </div>
+
+    <div class="forms">
+      <p class="label eyebrow" data-r style="margin-bottom:26px">Formazioni</p>
+      <div data-stagger>
+        <div class="fgroup">
+          <h3>Violino</h3>
+          <ul>
+            <li>Violino solo <small>con base professionale</small></li>
+            <li>Violino e pianoforte e/o organo</li>
+            <li>Violino e violoncello</li>
+          </ul>
+        </div>
+        <div class="fgroup">
+          <h3>Archi</h3>
+          <ul>
+            <li>Trio d’archi</li>
+            <li>Quartetto d’archi</li>
+          </ul>
+        </div>
+        <div class="fgroup">
+          <h3>Archi con tastiera</h3>
+          <ul>
+            <li>Trio con pianoforte e/o organo</li>
+            <li>Quartetto con pianoforte e/o organo</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -446,58 +522,58 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
 <!-- ============ VIDEO ============ -->
 <section id="video" class="sec light">
   <div class="wrap">
-    <div class="eyebrow"><span>03</span>Video<i class="rule" data-r></i></div>
-    <h2 class="statement split">Ascolta.</h2>
+    <div class="eyebrow"><span class="num">03</span>Video<i class="rule" data-r></i></div>
+    <h2 class="title split">Ascolta</h2>
 
     <!-- Primo video -->
     <div class="vfeature">
-      <figure data-r>
+      <div class="frame" data-r>
         <div class="vid-box v916">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=3GQbhmcbfrY" data-id="3GQbhmcbfrY" data-title="Bach / Gounod – Ave Maria, violino e pianoforte" aria-label="Riproduci: Ave Maria, violino e pianoforte">
             <img src="https://i.ytimg.com/vi/3GQbhmcbfrY/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
         </div>
-      </figure>
+      </div>
       <div class="vf-text" data-stagger>
         <span class="label">In primo piano</span>
-        <h3>Ave Maria</h3>
-        <p>Bach / Gounod, per violino e pianoforte, con Federico Mugnai al pianoforte. Un classico per la cerimonia: l'ingresso della sposa, lo scambio degli anelli, i momenti più intimi.</p>
-        <a class="pill" href="https://www.youtube.com/@giovanniferrando7244" target="_blank" rel="noopener">Tutti i video su YouTube</a>
+        <h3 class="h3" style="font-size:clamp(32px,4vw,52px)">Ave Maria</h3>
+        <p>Bach / Gounod, per violino e pianoforte, con Federico Mugnai al pianoforte. Un brano per la cerimonia: ingresso della sposa, scambio degli anelli.</p>
+        <a class="btn" href="https://www.youtube.com/@giovanniferrando7244" target="_blank" rel="noopener">Tutti i video su YouTube</a>
       </div>
     </div>
 
     <!-- Altri video -->
     <div class="vstrip" data-stagger>
       <figure class="w169">
-        <div class="vid-box">
+        <div class="frame"><div class="vid-box">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=7bupsSuAmJw" data-id="7bupsSuAmJw" data-title="Howard Shore – The Shire (Concerning Hobbits), ingresso degli sposi" aria-label="Riproduci: The Shire, ingresso degli sposi">
             <img src="https://i.ytimg.com/vi/7bupsSuAmJw/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
-        </div>
+        </div></div>
         <figcaption><strong>The Shire (Concerning Hobbits)</strong><span>Howard Shore · ingresso degli sposi, quartetto</span></figcaption>
       </figure>
       <figure class="w916">
-        <div class="vid-box">
+        <div class="frame"><div class="vid-box">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=CD3Lr9xGvzM" data-id="CD3Lr9xGvzM" data-title="J.S. Bach – Concerto per due violini, II movimento, ingresso degli sposi" aria-label="Riproduci: Bach, Concerto per due violini">
             <img src="https://i.ytimg.com/vi/CD3Lr9xGvzM/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
-        </div>
+        </div></div>
         <figcaption><strong>Concerto per due violini</strong><span>J.S. Bach · II mov., ingresso degli sposi</span></figcaption>
       </figure>
       <figure class="w916">
-        <div class="vid-box">
+        <div class="frame"><div class="vid-box">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=SCKQB3aWjFs" data-id="SCKQB3aWjFs" data-title="J.S. Bach – Aria sulla quarta corda" aria-label="Riproduci: Bach, Aria sulla quarta corda">
             <img src="https://i.ytimg.com/vi/SCKQB3aWjFs/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
-        </div>
+        </div></div>
         <figcaption><strong>Aria sulla quarta corda</strong><span>J.S. Bach · violino e violoncello</span></figcaption>
       </figure>
       <figure class="w916">
-        <div class="vid-box">
+        <div class="frame"><div class="vid-box">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=0PD-Sgyx_TU" data-id="0PD-Sgyx_TU" data-title="J.S. Bach – Suite n. 1, Preludio, per violino solo" aria-label="Riproduci: Bach, Suite n. 1, Preludio">
             <img src="https://i.ytimg.com/vi/0PD-Sgyx_TU/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
-        </div>
+        </div></div>
         <figcaption><strong>Suite n. 1, Preludio</strong><span>J.S. Bach · violino solo</span></figcaption>
       </figure>
     </div>
@@ -508,89 +584,50 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
 </section>
 
 <!-- ============ FOTO ============ -->
-<section id="foto" class="sec photos deep">
+<section id="foto" class="sec deep">
   <div class="wrap">
-    <div class="eyebrow"><span>04</span>Foto<i class="rule" data-r></i></div>
-    <h2 class="statement split">Dal vivo.</h2>
-  </div>
-  <div class="grid">
-    <div class="ph" data-r data-par><img src="foto/g-duo.jpg" alt="Violino e violoncello davanti all'altare di una chiesa" width="1200" height="1600" loading="lazy" decoding="async"></div>
-    <div class="ph" data-r data-par style="--d:120ms"><img src="foto/g-pov.jpg" alt="La chiesa vista dal leggio durante una cerimonia di matrimonio" width="1000" height="1775" loading="lazy" decoding="async"></div>
-    <div class="ph" data-r data-par style="--d:240ms"><img src="foto/g-affresco.jpg" alt="Violino e violoncello davanti all'abside affrescata di una chiesa" width="1066" height="1600" loading="lazy" decoding="async"></div>
-    <div class="ph wide" data-r data-par><img src="foto/g-wide.jpg" alt="Giovanni Ferrando al violino e un violoncellista durante una cerimonia in chiesa" width="1600" height="1066" loading="lazy" decoding="async" style="object-position:50% 0"></div>
-    <div class="ph" data-r data-par style="--d:120ms"><img src="foto/hero-2-m.jpg" alt="Trio d'archi durante una cerimonia di matrimonio" width="1100" height="1650" loading="lazy" decoding="async"></div>
-  </div>
-</section>
-
-<!-- ============ REPERTORIO ============ -->
-<section id="repertorio" class="sec light">
-  <div class="wrap">
-    <div class="eyebrow"><span>05</span>Repertorio<i class="rule" data-r></i></div>
-    <h2 class="statement split">Dai classici ai film, fino al pop.</h2>
-    <div class="rep3">
-      <div>
-        <h3 data-r>Classica</h3>
-        <ul data-stagger>
-          <li><small>J.S. Bach</small>Suite n. 1, Preludio</li>
-          <li><small>J.S. Bach</small>Aria sulla quarta corda</li>
-          <li><small>J.S. Bach</small>Concerto per due violini</li>
-          <li><small>Bach / Gounod</small>Ave Maria</li>
-          <li><small>F. Schubert</small>Ave Maria</li>
-          <li><small>A. Vivaldi</small>Le Quattro Stagioni</li>
-          <li><small>C. Debussy</small>Clair de Lune</li>
-        </ul>
-      </div>
-      <div>
-        <h3 data-r style="--d:100ms">Film e colonne sonore</h3>
-        <ul data-stagger data-base="100">
-          <li><small>E. Morricone</small>Nuovo Cinema Paradiso</li>
-          <li><small>H. Shore</small>The Shire (Concerning Hobbits)</li>
-        </ul>
-      </div>
-      <div>
-        <h3 data-r style="--d:200ms">Pop e cover</h3>
-        <ul data-stagger data-base="200">
-          <li><small>Lady Gaga</small>Shallow</li>
-          <li><small>Ed Sheeran</small>Perfect</li>
-          <!-- DA COMPLETARE: brano di Johnny Cash. Formato:
-          <li><small>Johnny Cash</small>TITOLO</li> -->
-        </ul>
-      </div>
+    <div class="eyebrow"><span class="num">04</span>Foto<i class="rule" data-r></i></div>
+    <h2 class="title split">Dal vivo</h2>
+    <div class="grid">
+      <div class="frame" data-r><div class="ph" data-r data-par><img src="foto/g-duo.jpg" alt="Violino e violoncello davanti all'altare di una chiesa" width="1200" height="1600" loading="lazy" decoding="async"></div></div>
+      <div class="frame" data-r style="--d:120ms"><div class="ph" data-r data-par style="--d:120ms"><img src="foto/g-pov.jpg" alt="La chiesa vista dal leggio durante una cerimonia di matrimonio" width="1000" height="1775" loading="lazy" decoding="async"></div></div>
+      <div class="frame" data-r style="--d:240ms"><div class="ph" data-r data-par style="--d:240ms"><img src="foto/g-affresco.jpg" alt="Violino e violoncello davanti all'abside affrescata di una chiesa" width="1066" height="1600" loading="lazy" decoding="async"></div></div>
+      <div class="frame wide" data-r><div class="ph" data-r data-par><img src="foto/g-wide.jpg" alt="Giovanni Ferrando al violino e un violoncellista durante una cerimonia in chiesa" width="1600" height="1066" loading="lazy" decoding="async" style="object-position:50% 0"></div></div>
+      <div class="frame" data-r style="--d:120ms"><div class="ph" data-r data-par style="--d:120ms"><img src="foto/hero-2-m.jpg" alt="Trio d'archi durante una cerimonia di matrimonio" width="1100" height="1650" loading="lazy" decoding="async"></div></div>
     </div>
-    <p class="rep-note" data-r>Un brano speciale per il vostro primo ballo? Scrivetemi.</p>
   </div>
 </section>
 
 <!-- ============ COME FUNZIONA ============ -->
-<section id="come-funziona" class="sec dark">
+<section id="come-funziona" class="sec light">
   <div class="wrap">
-    <div class="eyebrow"><span>06</span>Come funziona<i class="rule" data-r></i></div>
-    <h2 class="statement split">Violino dal vivo, base professionale. Semplice e curato.</h2>
+    <div class="eyebrow"><span class="num">05</span>Come funziona<i class="rule" data-r></i></div>
+    <h2 class="title split">Dalla richiesta all’evento</h2>
     <div class="cols3" data-stagger>
       <div>
         <span class="step-n">01</span>
-        <h3>Scriviamoci</h3>
-        <p>Mi racconti data, luogo e momenti in cui vuoi la musica. Ricevi un preventivo su misura.</p>
+        <h3 class="h3">Scrivimi</h3>
+        <p>Indicami data, luogo e momenti in cui vuoi la musica. Ricevi un preventivo su misura.</p>
       </div>
       <div>
         <span class="step-n">02</span>
-        <h3>Scegliamo la musica</h3>
-        <p>Costruiamo insieme la scaletta tra classica, film e pop, in base ai vostri gusti.</p>
+        <h3 class="h3">Scegliamo formazione e brani</h3>
+        <p>Definiamo insieme formazione e scaletta, in base al luogo, agli ospiti e ai vostri gusti.</p>
       </div>
       <div>
         <span class="step-n">03</span>
-        <h3>Il giorno dell'evento</h3>
-        <p>Arrivo con il mio impianto audio professionale, faccio la prova suono e suono dal vivo sulla base.</p>
+        <h3 class="h3">Il giorno dell’evento</h3>
+        <p>Arrivo in anticipo, faccio la prova suono e suono dal vivo.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ FAQ ============ -->
-<section id="faq" class="sec light">
+<section id="faq" class="sec light faqsec">
   <div class="wrap">
-    <div class="eyebrow"><span>07</span>Domande frequenti<i class="rule" data-r></i></div>
-    <h2 class="statement split">Domande frequenti.</h2>
+    <div class="eyebrow"><span class="num">06</span>Domande frequenti<i class="rule" data-r></i></div>
+    <h2 class="title split">Prima di scrivermi</h2>
     <div class="faq" data-stagger>
       <details>
         <summary>Dove suoni?</summary>
@@ -598,7 +635,11 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
       </details>
       <details>
         <summary>Quanto costa?</summary>
-        <p>Dipende da durata, numero di momenti musicali e distanza. Scrivimi data e luogo e ti rispondo con un preventivo su misura.</p>
+        <p>Dipende da formazione, durata, numero di momenti musicali e distanza. Scrivimi data e luogo e ti rispondo con un preventivo su misura.</p>
+      </details>
+      <details>
+        <summary>Quale formazione scegliere?</summary>
+        <p>Dal violino solo al quartetto, anche con pianoforte e/o organo. La scelta dipende da luogo, numero di ospiti e budget: ti consiglio la soluzione più adatta quando mi scrivi.</p>
       </details>
       <details>
         <summary>Suoni anche in chiesa?</summary>
@@ -606,18 +647,18 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
       </details>
       <details>
         <summary>Come funziona la base?</summary>
-        <p>Suono dal vivo sopra una base musicale di qualità, diffusa dal mio impianto audio professionale. Il risultato è un suono pieno anche senza altri musicisti.</p>
+        <p>Con il violino solo suono dal vivo sopra una base musicale di qualità, diffusa dal mio impianto audio professionale.</p>
       </details>
       <details>
         <summary>Quanto dura la musica?</summary>
-        <p>Dipende dal momento: cerimonia, aperitivo, cena o festa. Costruiamo set dal vivo alternati a musica di sottofondo, così l'atmosfera non si ferma mai.</p>
+        <p>Dipende dal momento: cerimonia, aperitivo, cena o festa. Costruiamo set dal vivo alternati a musica di sottofondo, così l’atmosfera non si ferma mai.</p>
       </details>
       <details>
         <summary>Servono spazio e corrente elettrica?</summary>
-        <p>Mi bastano una presa elettrica e un piccolo spazio. Se hai dubbi sulla location, scrivimi e verifichiamo insieme.</p>
+        <p>Per il violino solo mi bastano una presa elettrica e un piccolo spazio. Per le altre formazioni ci sentiamo prima per definire spazi e strumenti, pianoforte o organo compresi.</p>
       </details>
       <details>
-        <summary>Si può suonare all'aperto?</summary>
+        <summary>Si può suonare all’aperto?</summary>
         <p>Sì, purché ci sia un riparo da pioggia e sole diretto: il violino soffre umidità e caldo intenso.</p>
       </details>
       <details>
@@ -631,13 +672,21 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
 <!-- ============ CONTATTI ============ -->
 <section id="contatti" class="sec deep">
   <div class="wrap">
-    <div class="eyebrow"><span>08</span>Contatti<i class="rule" data-r></i></div>
-    <h2 class="statement split">Parliamo della tua data.</h2>
-    <a class="mail" data-r href="mailto:giovanniferrando.violinista@gmail.com?subject=Richiesta%20preventivo&amp;body=Data%20evento:%0D%0ALuogo:%0D%0ATipo%20di%20evento:%0D%0AMomenti%20musicali%20(cerimonia,%20aperitivo,%20cena,%20festa):%0D%0ANumero%20ospiti:%0D%0A">giovanniferrando.violinista@gmail.com</a>
-    <div class="contact-actions" data-stagger>
-      <a class="pill" href="https://www.instagram.com/giovanniferrando.violinista/" target="_blank" rel="noopener">Instagram · @giovanniferrando.violinista</a>
-      <a class="pill" href="https://www.youtube.com/@giovanniferrando7244" target="_blank" rel="noopener">YouTube</a>
+    <div class="eyebrow"><span class="num">07</span>Contatti<i class="rule" data-r></i></div>
+    <h2 class="title split">Parliamo della tua data</h2>
+    <a class="mail" data-r href="mailto:giovanniferrando.violinista@gmail.com?subject=Richiesta%20preventivo&amp;body=Data%20evento:%0D%0ALuogo:%0D%0ATipo%20di%20evento:%0D%0AFormazione%20(violino%20solo,%20duo,%20trio,%20quartetto...):%0D%0AMomenti%20musicali%20(cerimonia,%20aperitivo,%20cena,%20festa):%0D%0ANumero%20ospiti:%0D%0A">giovanniferrando.violinista@gmail.com</a>
+
+    <div class="socials" data-stagger>
+      <a class="social" href="https://www.instagram.com/giovanniferrando.violinista/" target="_blank" rel="noopener" aria-label="Instagram @giovanniferrando.violinista">
+        <span class="ico-wrap"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></span>
+        <span><b>Instagram</b><span>@giovanniferrando.violinista</span></span>
+      </a>
+      <a class="social" href="https://www.youtube.com/@giovanniferrando7244" target="_blank" rel="noopener" aria-label="YouTube @giovanniferrando7244">
+        <span class="ico-wrap"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.4v5.2l4.6-2.6z"/></svg></span>
+        <span><b>YouTube</b><span>@giovanniferrando7244</span></span>
+      </a>
     </div>
+
     <p class="copyright">&copy; <span id="year">2026</span> Giovanni Ferrando. Milano.</p>
   </div>
 </section>
@@ -658,10 +707,10 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
     document.body.classList.toggle('lock',open);
   }
   burger.addEventListener('click',function(){setMenu(!menu.classList.contains('open'))});
-  menu.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false)});
+  menu.addEventListener('click',function(e){if(e.target.closest('a[href^="#"]'))setMenu(false)});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
 
-  /* ---------- Titoli spezzati in parole (per l'effetto a maschera) ---------- */
+  /* ---------- Titoli spezzati in parole (effetto a maschera) ---------- */
   document.querySelectorAll('.split').forEach(function(el){
     var text=el.textContent.trim();
     if(!el.hasAttribute('aria-label'))el.setAttribute('aria-label',text);
@@ -685,7 +734,7 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
   });
   var targets=[].slice.call(document.querySelectorAll('[data-r],.split'));
   var heroTitle=document.getElementById('heroTitle');
-  heroTitle.style.setProperty('--base','250ms');
+  heroTitle.style.setProperty('--base','350ms');
   if('IntersectionObserver' in window&&!reduce){
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(e){
@@ -699,32 +748,24 @@ figcaption span{display:block;font-weight:300;opacity:.7;margin-top:2px}
   }
 
   /* ---------- Scroll: barra di avanzamento, header, parallasse ---------- */
-  var secs=[].slice.call(document.querySelectorAll('main > section'));
   var bar=document.getElementById('progress');
   var slidesBox=document.getElementById('slides'), heroInner=document.getElementById('heroInner'), hero=document.getElementById('intro');
   var pars=[].slice.call(document.querySelectorAll('.ph[data-par]'));
   var ticking=false;
 
-  function headerTheme(){
-    var y=24,cur=null;
-    secs.forEach(function(s){var r=s.getBoundingClientRect();if(r.top<=y&&r.bottom>y)cur=s;});
-    hdr.classList.toggle('on-light',!!cur&&cur.classList.contains('light'));
-    hdr.classList.toggle('over-hero',!!cur&&cur.id==='intro');
-  }
   function frame(){
     ticking=false;
     var sy=window.pageYOffset||document.documentElement.scrollTop, vh=window.innerHeight;
     var max=document.documentElement.scrollHeight-vh;
+    var hh=hero.offsetHeight;
+    hdr.classList.toggle('solid',sy>40);
+    hdr.classList.toggle('over-hero',sy<hh-140);
     if(!reduce)bar.style.transform='scaleX('+(max>0?Math.min(1,sy/max):0)+')';
-    headerTheme();
     if(reduce)return;
-    /* hero: la foto scorre più lentamente, il testo sfuma */
-    if(sy<hero.offsetHeight){
-      var hh=hero.offsetHeight;
+    if(sy<hh){
       slidesBox.style.transform='translate3d(0,'+Math.min(sy*0.25,hh*0.12)+'px,0)';
       heroInner.style.opacity=Math.max(0,1-sy/(hh*0.7));
     }
-    /* parallasse leggero dentro le cornici delle foto */
     pars.forEach(function(p){
       var r=p.getBoundingClientRect();
       if(r.bottom<-50||r.top>vh+50)return;
