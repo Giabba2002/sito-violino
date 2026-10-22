@@ -11,9 +11,9 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:url" content="https://giabba2002.github.io/sito-violino/">
-<meta property="og:image" content="https://giabba2002.github.io/sito-violino/foto/hero-1.jpg">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="1067">
+<meta property="og:image" content="https://giabba2002.github.io/sito-violino/foto/og-violinista.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://giabba2002.github.io/sito-violino/">
 <!-- Se in futuro usi un dominio tuo, sostituisci "https://giabba2002.github.io/sito-violino/" qui sopra e nel blocco "url" più sotto -->
@@ -21,8 +21,8 @@
 
 <script>document.documentElement.className+=' js';</script>
 
-<link rel="preload" as="image" href="foto/hero-1.jpg" media="(min-aspect-ratio: 1/1)" fetchpriority="high">
-<link rel="preload" as="image" href="foto/hero-1-m.jpg" media="(max-aspect-ratio: 1/1)" fetchpriority="high">
+<link rel="preload" as="image" href="foto/hero-2.jpg" media="(min-aspect-ratio: 1/1)" fetchpriority="high">
+<link rel="preload" as="image" href="foto/hero-2-m.jpg" media="(max-aspect-ratio: 1/1)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://i.ytimg.com">
@@ -133,7 +133,9 @@ p{color:var(--muted)}
 .burger span:nth-child(2){top:25px}
 .burger[aria-expanded="true"] span:nth-child(1){top:22px;transform:rotate(45deg)}
 .burger[aria-expanded="true"] span:nth-child(2){top:22px;transform:rotate(-45deg)}
-@media(min-width:1100px){.topnav{display:flex}.burger{display:none}}
+.topnav a{white-space:nowrap}
+@media(min-width:1200px){.topnav{display:flex}.burger{display:none}}
+@media(min-width:1200px) and (max-width:1399px){.topnav{gap:22px}.topnav a{letter-spacing:.12em;font-size:11px}}
 
 /* ---------- Menu a tutto schermo ---------- */
 .menu{
@@ -285,6 +287,8 @@ figcaption span{display:block;color:var(--muted)}
 
 /* ---------- Contatti ---------- */
 .mail{position:relative;display:inline-block;margin-top:clamp(36px,5vw,64px);font-family:var(--serif);font-size:clamp(16px,4.4vw,58px);letter-spacing:-.01em;line-height:1.2;max-width:100%;overflow-wrap:anywhere;padding-bottom:6px;color:var(--fg)}
+.mail-lead{margin-top:clamp(36px,5vw,64px);font:italic 400 clamp(18px,2.2vw,24px)/1.2 var(--serif);letter-spacing:.01em;color:var(--gold)}
+.mail-lead+.mail{margin-top:10px}
 .mail::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform-origin:left;transition:transform .7s var(--ease)}
 .mail:hover::after{transform:scaleX(0);transform-origin:right}
 @media(max-width:480px){.mail{font-size:clamp(15px,5.1vw,24px)}}
@@ -362,7 +366,8 @@ figcaption span{display:block;color:var(--muted)}
       <a href="#servizi">Servizi</a>
       <a href="#video">Video</a>
       <a href="#foto">Foto</a>
-      <a href="#contatti">Contatti</a>
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#contatti">Verifica la disponibilità</a>
     </nav>
     <a class="btn" href="#contatti">Preventivo</a>
     <button class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
@@ -378,7 +383,7 @@ figcaption span{display:block;color:var(--muted)}
     <li style="--i:3"><a href="#foto">Foto</a></li>
     <li style="--i:4"><a href="#come-funziona">Come funziona</a></li>
     <li style="--i:5"><a href="#faq">Domande frequenti</a></li>
-    <li style="--i:6"><a href="#contatti">Contatti</a></li>
+    <li style="--i:6"><a href="#contatti">Verifica la disponibilità</a></li>
   </ul>
   <div class="menu-foot">
     <a href="mailto:giovanniferrando.violinista@gmail.com">giovanniferrando.violinista@gmail.com</a>
@@ -395,12 +400,12 @@ figcaption span{display:block;color:var(--muted)}
   <!-- Foto che ruotano: per cambiarle, sostituisci i file nella cartella "foto" (stessi nomi) -->
   <div class="slides" id="slides" aria-hidden="true">
     <picture class="slide on">
-      <source media="(max-aspect-ratio: 1/1)" srcset="foto/hero-1-m.jpg">
-      <img src="foto/hero-1.jpg" alt="" width="1600" height="1067" fetchpriority="high" decoding="async" style="object-position:50% 45%">
+      <source media="(max-aspect-ratio: 1/1)" srcset="foto/hero-2-m.jpg">
+      <img src="foto/hero-2.jpg" alt="" width="2000" height="1333" fetchpriority="high" decoding="async" style="object-position:50% 35%">
     </picture>
     <picture class="slide">
-      <source media="(max-aspect-ratio: 1/1)" data-srcset="foto/hero-2-m.jpg">
-      <img data-src="foto/hero-2.jpg" alt="" width="2000" height="1333" decoding="async" style="object-position:50% 35%">
+      <source media="(max-aspect-ratio: 1/1)" data-srcset="foto/hero-1-m.jpg">
+      <img data-src="foto/hero-1.jpg" alt="" width="1600" height="1067" decoding="async" style="object-position:50% 45%">
     </picture>
     <picture class="slide">
       <source media="(max-aspect-ratio: 1/1)" data-srcset="foto/hero-3-m.jpg">
@@ -684,8 +689,9 @@ figcaption span{display:block;color:var(--muted)}
 <!-- ============ CONTATTI ============ -->
 <section id="contatti" class="sec deep">
   <div class="wrap">
-    <div class="eyebrow"><span class="num">07</span>Contatti<i class="rule" data-r></i></div>
+    <div class="eyebrow"><span class="num">07</span>Verifica la disponibilità<i class="rule" data-r></i></div>
     <h2 class="title split">Parliamo della tua data</h2>
+    <p class="mail-lead" data-r>Scrivimi a:</p>
     <a class="mail" data-r href="mailto:giovanniferrando.violinista@gmail.com?subject=Richiesta%20preventivo&amp;body=Data%20evento:%0D%0ALuogo:%0D%0ATipo%20di%20evento:%0D%0AFormazione%20(violino%20solo,%20duo,%20trio,%20quartetto...):%0D%0AMomenti%20musicali%20(cerimonia,%20aperitivo,%20cena,%20festa):%0D%0ANumero%20ospiti:%0D%0A">giovanniferrando.violinista@gmail.com</a>
 
     <div class="socials" data-stagger>
