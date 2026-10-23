@@ -1,8 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#141109"/>
-  <g stroke="#fafafa" stroke-width="1.6" stroke-opacity=".55">
-    <path d="M8 20H56M8 26H56M8 32H56M8 38H56M8 44H56"/>
+  <rect width="64" height="64" rx="14" fill="#0b0a08"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="12" fill="none" stroke="#c9a85c" stroke-opacity=".5" stroke-width="1.2"/>
+  <g transform="translate(32 33) rotate(32) scale(1.08) translate(-32 -33)" fill="#d9c885">
+    <path d="M32 22C26.6 22 23 24.4 23 28.8c0 3 2.8 4 2.8 6.2 0 2-4.4 3.6-4.4 8.8 0 5.6 4.8 9.2 10.6 9.2s10.6-3.6 10.6-9.2c0-5.2-4.4-6.8-4.4-8.8 0-2.2 2.8-3.2 2.8-6.2C41 24.4 37.4 22 32 22z"/>
+    <rect x="30.6" y="8.5" width="2.8" height="15" rx="1"/>
+    <circle cx="32" cy="6.6" r="2.7"/>
+    <g fill="none" stroke="#0b0a08" stroke-linecap="round">
+      <path d="M27.6 37.5c-1 2.6-1 5.4 0 8" stroke-width="1.4"/>
+      <path d="M36.4 37.5c1 2.6 1 5.4 0 8" stroke-width="1.4"/>
+      <path d="M29.6 49.6h4.8" stroke-width="1.2"/>
+    </g>
   </g>
-  <ellipse cx="30" cy="38" rx="6.2" ry="4.4" transform="rotate(-20 30 38)" fill="#fafafa"/>
-  <path d="M35.6 36V16" stroke="#fafafa" stroke-width="1.8" fill="none"/>
 </svg>
