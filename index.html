@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:url" content="https://giabba2002.github.io/sito-violino/">
-<meta property="og:image" content="https://giabba2002.github.io/sito-violino/foto/og-whatsapp.jpg">
+<meta property="og:image" content="https://giabba2002.github.io/sito-violino/og-whatsapp.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:alt" content="Giovanni Ferrando suona il violino durante una cerimonia di matrimonio">
 <meta property="og:image:width" content="1200">
@@ -25,8 +25,8 @@
 
 <script>document.documentElement.className+=' js';</script>
 
-<link rel="preload" as="image" href="foto/hero-2.jpg" media="(min-aspect-ratio: 1/1)" fetchpriority="high">
-<link rel="preload" as="image" href="foto/hero-2-m.jpg" media="(max-aspect-ratio: 1/1)" fetchpriority="high">
+<link rel="preload" as="image" href="hero-2.jpg" media="(min-aspect-ratio: 1/1)" fetchpriority="high">
+<link rel="preload" as="image" href="hero-2-m.jpg" media="(max-aspect-ratio: 1/1)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://i.ytimg.com">
@@ -176,7 +176,7 @@ p{color:var(--muted)}
 
 /* Pentagramma: chiave, tonalità, melodia e onde sottili dietro (le "corde") */
 .staffwrap{margin:auto calc(var(--gut)*-1) clamp(14px,3vh,30px);padding-top:28px;overflow:hidden}
-.staff-svg{display:block;width:max(100%,1000px);height:auto;overflow:visible}
+.staff-svg{display:block;width:clamp(620px,58%,880px);margin:0 auto;height:auto;overflow:visible}
 .staff-svg .ln{fill:none;stroke:rgba(217,200,133,.5);stroke-width:1;stroke-dasharray:1;stroke-dashoffset:1;animation:lineDraw 1.9s var(--ease) forwards;animation-delay:var(--d,0s)}
 .staff-svg .ln.bar{stroke:rgba(217,200,133,.8)}
 .staff-svg .fl,.staff-svg .hd,.staff-svg .bm{fill:#d9c885}
@@ -379,7 +379,7 @@ figcaption span{display:block;color:var(--muted)}
   .grid{grid-template-columns:1fr;grid-auto-rows:clamp(340px,92vw,520px)}
   .grid .wide{grid-column:auto}
   .hdr .btn{display:none}
-  .staff-svg{width:max(100%,780px)}
+  .staff-svg{width:620px;margin:0}
 }
 @media(max-height:700px){.hero-inner{padding-top:96px}}
 
@@ -441,23 +441,23 @@ figcaption span{display:block;color:var(--muted)}
 <!-- ============ HERO ============ -->
 <section id="intro" class="hero deep">
 
-  <!-- Foto che ruotano: per cambiarle, sostituisci i file nella cartella "foto" (stessi nomi) -->
+  <!-- Foto che ruotano: per cambiarle, sostituisci i file hero-1.jpg ... hero-4.jpg (stessi nomi) -->
   <div class="slides" id="slides" aria-hidden="true">
     <picture class="slide on">
-      <source media="(max-aspect-ratio: 1/1)" srcset="foto/hero-2-m.jpg">
-      <img src="foto/hero-2.jpg" alt="" width="2000" height="1333" fetchpriority="high" decoding="async" style="object-position:50% 35%">
+      <source media="(max-aspect-ratio: 1/1)" srcset="hero-2-m.jpg">
+      <img src="hero-2.jpg" alt="" width="2000" height="1333" fetchpriority="high" decoding="async" style="object-position:50% 35%">
     </picture>
     <picture class="slide">
-      <source media="(max-aspect-ratio: 1/1)" data-srcset="foto/hero-1-m.jpg">
-      <img data-src="foto/hero-1.jpg" alt="" width="1600" height="1067" decoding="async" style="object-position:50% 45%">
+      <source media="(max-aspect-ratio: 1/1)" data-srcset="hero-1-m.jpg">
+      <img data-src="hero-1.jpg" alt="" width="1600" height="1067" decoding="async" style="object-position:50% 45%">
     </picture>
     <picture class="slide">
-      <source media="(max-aspect-ratio: 1/1)" data-srcset="foto/hero-3-m.jpg">
-      <img data-src="foto/hero-3.jpg" alt="" width="2000" height="1333" decoding="async" style="object-position:50% 55%">
+      <source media="(max-aspect-ratio: 1/1)" data-srcset="hero-3-m.jpg">
+      <img data-src="hero-3.jpg" alt="" width="2000" height="1333" decoding="async" style="object-position:50% 55%">
     </picture>
     <picture class="slide">
-      <source media="(max-aspect-ratio: 1/1)" data-srcset="foto/hero-4-m.jpg">
-      <img data-src="foto/hero-4.jpg" alt="" width="1600" height="1067" decoding="async" style="object-position:50% 40%">
+      <source media="(max-aspect-ratio: 1/1)" data-srcset="hero-4-m.jpg">
+      <img data-src="hero-4.jpg" alt="" width="1600" height="1067" decoding="async" style="object-position:50% 40%">
     </picture>
   </div>
 
@@ -518,7 +518,7 @@ figcaption span{display:block;color:var(--muted)}
         </dl>
       </div>
       <div class="frame" data-r style="--d:150ms">
-        <div class="ph" data-r data-par><img src="foto/chi-sono.jpg" alt="Giovanni Ferrando con il violino in una chiesa" width="1200" height="1600" loading="lazy" decoding="async"></div>
+        <div class="ph" data-r data-par><img src="chi-sono.jpg" alt="Giovanni Ferrando con il violino in una chiesa" width="1200" height="1600" loading="lazy" decoding="async"></div>
       </div>
     </div>
   </div>
@@ -591,7 +591,7 @@ figcaption span{display:block;color:var(--muted)}
       <div class="frame" data-r>
         <div class="vid-box v916">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=3GQbhmcbfrY" data-id="3GQbhmcbfrY" data-title="Bach / Gounod – Ave Maria, violino e pianoforte" aria-label="Riproduci: Ave Maria, violino e pianoforte">
-            <img src="https://i.ytimg.com/vi/3GQbhmcbfrY/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
+            <img src="https://i.ytimg.com/vi/3GQbhmcbfrY/oardefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
         </div>
       </div>
@@ -608,7 +608,7 @@ figcaption span{display:block;color:var(--muted)}
       <figure class="w169">
         <div class="frame"><div class="vid-box">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=7bupsSuAmJw" data-id="7bupsSuAmJw" data-title="Howard Shore – The Shire (Concerning Hobbits), ingresso degli sposi" aria-label="Riproduci: The Shire, ingresso degli sposi">
-            <img src="https://i.ytimg.com/vi/7bupsSuAmJw/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
+            <img src="https://i.ytimg.com/vi/7bupsSuAmJw/sddefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
         </div></div>
         <figcaption><strong>The Shire (Concerning Hobbits)</strong><span>Howard Shore · ingresso degli sposi, quartetto</span></figcaption>
@@ -616,7 +616,7 @@ figcaption span{display:block;color:var(--muted)}
       <figure class="w916">
         <div class="frame"><div class="vid-box">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=CD3Lr9xGvzM" data-id="CD3Lr9xGvzM" data-title="J.S. Bach – Concerto per due violini, II movimento, ingresso degli sposi" aria-label="Riproduci: Bach, Concerto per due violini">
-            <img src="https://i.ytimg.com/vi/CD3Lr9xGvzM/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
+            <img src="https://i.ytimg.com/vi/CD3Lr9xGvzM/oardefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
         </div></div>
         <figcaption><strong>Concerto per due violini</strong><span>J.S. Bach · II mov., ingresso degli sposi</span></figcaption>
@@ -624,7 +624,7 @@ figcaption span{display:block;color:var(--muted)}
       <figure class="w916">
         <div class="frame"><div class="vid-box">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=SCKQB3aWjFs" data-id="SCKQB3aWjFs" data-title="J.S. Bach – Aria sulla quarta corda" aria-label="Riproduci: Bach, Aria sulla quarta corda">
-            <img src="https://i.ytimg.com/vi/SCKQB3aWjFs/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
+            <img src="https://i.ytimg.com/vi/SCKQB3aWjFs/oardefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
         </div></div>
         <figcaption><strong>Aria sulla quarta corda</strong><span>J.S. Bach · violino e violoncello</span></figcaption>
@@ -632,7 +632,7 @@ figcaption span{display:block;color:var(--muted)}
       <figure class="w916">
         <div class="frame"><div class="vid-box">
           <a class="vid-btn" href="https://www.youtube.com/watch?v=0PD-Sgyx_TU" data-id="0PD-Sgyx_TU" data-title="J.S. Bach – Suite n. 1, Preludio, per violino solo" aria-label="Riproduci: Bach, Suite n. 1, Preludio">
-            <img src="https://i.ytimg.com/vi/0PD-Sgyx_TU/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
+            <img src="https://i.ytimg.com/vi/0PD-Sgyx_TU/oardefault.jpg" alt="" loading="lazy" decoding="async"><span class="play"></span>
           </a>
         </div></div>
         <figcaption><strong>Suite n. 1, Preludio</strong><span>J.S. Bach · violino solo</span></figcaption>
@@ -650,11 +650,11 @@ figcaption span{display:block;color:var(--muted)}
     <div class="eyebrow"><span class="num">04</span>Foto<i class="rule" data-r></i></div>
     <h2 class="title split">Dal vivo</h2>
     <div class="grid">
-      <div class="frame" data-r><div class="ph" data-r data-par><img src="foto/g-duo.jpg" alt="Violino e violoncello davanti all'altare di una chiesa" width="1200" height="1600" loading="lazy" decoding="async"></div></div>
-      <div class="frame" data-r style="--d:120ms"><div class="ph" data-r data-par style="--d:120ms"><img src="foto/g-pov.jpg" alt="La chiesa vista dal leggio durante una cerimonia di matrimonio" width="1000" height="1775" loading="lazy" decoding="async"></div></div>
-      <div class="frame" data-r style="--d:240ms"><div class="ph" data-r data-par style="--d:240ms"><img src="foto/g-affresco.jpg" alt="Violino e violoncello davanti all'abside affrescata di una chiesa" width="1066" height="1600" loading="lazy" decoding="async"></div></div>
-      <div class="frame wide" data-r><div class="ph" data-r data-par><img src="foto/g-wide.jpg" alt="Giovanni Ferrando al violino e un violoncellista durante una cerimonia in chiesa" width="1600" height="1066" loading="lazy" decoding="async" style="object-position:50% 0"></div></div>
-      <div class="frame" data-r style="--d:120ms"><div class="ph" data-r data-par style="--d:120ms"><img src="foto/hero-2-m.jpg" alt="Trio d'archi durante una cerimonia di matrimonio" width="1100" height="1650" loading="lazy" decoding="async"></div></div>
+      <div class="frame" data-r><div class="ph" data-r data-par><img src="g-duo.jpg" alt="Violino e violoncello davanti all'altare di una chiesa" width="1200" height="1600" loading="lazy" decoding="async"></div></div>
+      <div class="frame" data-r style="--d:120ms"><div class="ph" data-r data-par style="--d:120ms"><img src="g-pov.jpg" alt="La chiesa vista dal leggio durante una cerimonia di matrimonio" width="1000" height="1775" loading="lazy" decoding="async"></div></div>
+      <div class="frame" data-r style="--d:240ms"><div class="ph" data-r data-par style="--d:240ms"><img src="g-affresco.jpg" alt="Violino e violoncello davanti all'abside affrescata di una chiesa" width="1066" height="1600" loading="lazy" decoding="async"></div></div>
+      <div class="frame wide" data-r><div class="ph" data-r data-par><img src="g-wide.jpg" alt="Giovanni Ferrando al violino e un violoncellista durante una cerimonia in chiesa" width="1600" height="1066" loading="lazy" decoding="async" style="object-position:50% 0"></div></div>
+      <div class="frame" data-r style="--d:120ms"><div class="ph" data-r data-par style="--d:120ms"><img src="hero-2-m.jpg" alt="Trio d'archi durante una cerimonia di matrimonio" width="1100" height="1650" loading="lazy" decoding="async"></div></div>
     </div>
   </div>
 </section>
@@ -886,6 +886,10 @@ figcaption span{display:block;color:var(--muted)}
 
   /* ---------- Video: l'iframe YouTube si carica solo al click (sito più veloce) ---------- */
   document.querySelectorAll('.vid-btn').forEach(function(a){
+    var th=a.querySelector('img');
+    function std(){var u='https://i.ytimg.com/vi/'+a.dataset.id+'/hqdefault.jpg';if(th.src!==u)th.src=u;}
+    th.addEventListener('error',std);
+    th.addEventListener('load',function(){if(th.naturalWidth<=120)std();});   /* YouTube risponde con un segnaposto 120x90 */
     a.addEventListener('click',function(e){
       e.preventDefault();
       var f=document.createElement('iframe');
@@ -899,7 +903,7 @@ figcaption span{display:block;color:var(--muted)}
 
   /* ---------- Pentagramma che suona ----------
      Il pulsante fa partire l'inizio della Marcia nuziale (registrazione orchestrale di
-     pubblico dominio, file audio/marcia-nuziale.mp3) e le note si accendono a tempo.
+     pubblico dominio, file marcia-nuziale.mp3) e le note si accendono a tempo.
      Dopo il primo click, passando sulle note si sente il punto corrispondente.
      T = secondo in cui cade ogni nota nella registrazione, nell'ordine del pentagramma. */
   (function(){
@@ -945,7 +949,7 @@ figcaption span{display:block;color:var(--muted)}
     function load(){
       if(loading)return loading;
       ctx=new AC();
-      loading=fetch('audio/marcia-nuziale.mp3')
+      loading=fetch('marcia-nuziale.mp3')
         .then(function(r){if(!r.ok)throw 0;return r.arrayBuffer();})
         .then(function(a){return new Promise(function(ok,ko){ctx.decodeAudioData(a,ok,ko);});})
         .then(function(b){buf=b;});
